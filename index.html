@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bi ON</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#1F5A33">
+
+<link rel="manifest" href="manifest.json">
+
+<link rel="apple-touch-icon" href="assets/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Bi ON">
+
+</head>
+
+<body>
+
+<div id="inicio">
+
+<img src="assets/logo.png-removebg-preview.png" class="logo">
+
+<h1>Aprendé a reciclar</h1>
+
+<p>
+Clasificá los residuos en el tacho correcto y ayudá al planeta.
+</p>
+
+<button id="btnJugar">
+COMENZAR
+</button>
+
+</div>
+
+<div id="juego" style="display:none;">
+
+<header>
+
+<img src="assets/logo.png-removebg-preview.png" class="logoMini">
+
+<div class="score">
+
+⭐ <span id="puntaje">0</span>
+
+</div>
+
+</header>
+
+<div class="nivel">
+
+Nivel
+
+<span id="nivel">1</span>
+
+</div>
+
+<div class="barra">
+
+<div id="progreso"></div>
+
+</div>
+
+<div class="tarjeta">
+
+<div id="emoji" draggable="true"></div>
+<h2 id="nombre">
+
+Cáscara de banana
+
+</h2>
+
+<p>
+
+Arrastrá el residuo hacia el tacho correcto.
+
+</p>
+
+</div>
+<div class="tachos">
+
+<div class="tacho organico"
+ondragover="permitir(event)"
+ondrop="soltar(event,'organico')">
+
+🌿
+
+<h3>ORGÁNICO</h3>
+
+</div>
+
+<div class="tacho inorganico"
+ondragover="permitir(event)"
+ondrop="soltar(event,'inorganico')">
+
+♻️
+
+<h3>INORGÁNICO</h3>
+
+</div>
+
+</div>
+
+<div id="mensaje"></div>
+
+</div>
+
+<script src="residuos.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
