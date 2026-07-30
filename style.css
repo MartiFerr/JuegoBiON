@@ -207,10 +207,37 @@ html, body{
 }
 
 
-@media (max-width: 768px) {
-  .container {
-    transform: scale(0.85);
-    transform-origin: top center;
-  }
-}
 
+@media (max-width: 768px) {
+
+  #juego{
+    padding:10px;
+  }
+
+  .tarjeta{
+    padding:20px;
+    border-radius:20px;
+  }
+
+  #emoji{
+    font-size:60px;
+  }
+
+  h2{
+    font-size:30px;
+  }
+
+  .tacho{
+    padding:20px;
+    font-size:28px;
+  }
+
+  .tacho h3{
+    font-size:22px;
+  }
+
+  .logoMini{
+    width:80px;
+  }
+
+}
