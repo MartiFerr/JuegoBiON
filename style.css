@@ -206,15 +206,3 @@ html, body{
     box-sizing:border-box;
 }
 
-.card {
-    min-height: 80px;
-}
-
-.bin {
-    height: 80px;
-    font-size: 2rem;
-}
-
-.residue img {
-    width: 85px;
-}
