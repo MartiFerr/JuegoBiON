@@ -207,11 +207,11 @@ html, body{
 }
 
 .card {
-    min-height: 170px;
+    min-height: 80px;
 }
 
 .bin {
-    height: 180px;
+    height: 80px;
     font-size: 2rem;
 }
 
