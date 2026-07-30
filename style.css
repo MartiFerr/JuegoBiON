@@ -207,14 +207,14 @@ html, body{
 }
 
 .card {
-    min-height: 220px;
+    min-height: 170px;
 }
 
 .bin {
-    height: 220px;
+    height: 180px;
     font-size: 2rem;
 }
 
 .residue img {
-    width: 100px;
+    width: 85px;
 }
