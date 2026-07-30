@@ -206,15 +206,3 @@ html, body{
     box-sizing:border-box;
 }
 
-@media (max-width: 768px) {
-  body {
-    zoom: 0.9;
-  }
-}
-
-@media (max-width: 768px) {
-  .game-container {
-    transform: scale(0.9);
-    transform-origin: top center;
-  }
-}
