@@ -207,24 +207,10 @@ html, body{
 }
 
 
-/* Solo para celulares */
 @media (max-width: 768px) {
-
-  .card {
-    padding: 20px;
-    min-height: 260px;
-  }
-
-  .card img {
-    width: 90px;
-    height: 90px;
-  }
-
-  .bin {
-    height: 180px;
-  }
-
-  .bin h2 {
-    font-size: 2rem;
+  .container {
+    transform: scale(0.85);
+    transform-origin: top center;
   }
 }
+
