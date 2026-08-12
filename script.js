@@ -14,6 +14,8 @@ const boton = document.getElementById("btnJugar");
 const emoji = document.getElementById("emoji");
 const nombre = document.getElementById("nombre");
 const mensaje = document.getElementById("mensaje");
+const informacion = document.getElementById("informacion");
+const importancia = document.getElementById("importancia");
 
 const txtPuntos = document.getElementById("puntaje");
 const txtNivel = document.getElementById("nivel");
@@ -35,15 +37,19 @@ cargarResiduo();
 
 function cargarResiduo(){
 
-let r = residuos[actual];
+    let r = residuos[actual];
 
-emoji.innerHTML = r.icono;
+    emoji.innerHTML = r.icono;
 
-nombre.innerHTML = r.nombre;
+    nombre.innerHTML = r.nombre;
 
-mensaje.innerHTML = "";
+    informacion.innerHTML = "📚 " + r.informacion;
 
-progreso.style.width = ((actual+1)/residuos.length*100)+"%";
+    importancia.innerHTML = "🌱 " + r.importancia;
+
+    mensaje.innerHTML = "";
+
+    progreso.style.width = ((actual + 1) / residuos.length * 100) + "%";
 
 }
 
