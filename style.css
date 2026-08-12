@@ -239,5 +239,12 @@ html, body{
   .logoMini{
     width:80px;
   }
+  .informacion{
+    font-size:30px;
+  }
+  .importancia{
+    font-size:30px;
+  }
+  
 
 }
