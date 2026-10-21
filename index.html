@@ -35,112 +35,102 @@
 Clasificá los residuos en el tacho correcto y ayudá al planeta.
 </p>
   <div class="instrucciones">
-        <h>¿Cómo jugar?</h2>
 
-        <p>
-             Para aprender a reciclar, primero apretá el botón
-            <strong>COMENZAR</strong> para iniciar el juego.
-        </p>
 
-        <p>
-             Después, mantené apretado el residuo que aparece
-            en la pantalla y arrastralo hasta el tacho donde
-            creas que corresponde.
-        </p>
+    <h2>¿Cómo jugar?</h2>
 
-        <p>
-             ¡Prestá atención! En cada residuo vas a encontrar
-            información que te explica por qué es importante
-            reciclarlo y cómo ayuda a cuidar nuestro planeta.
-        </p>
-
-        <p>
-         ¡Aprendé, divertite y convertite en un héroe
-            del reciclaje!
-        </p>
+    <p>
+        Para aprender a reciclar, primero apretá el botón
+        <strong>COMENZAR</strong> para iniciar el juego.
+    </p>
+    
+    <p>
+        Después, observá el residuo que aparece en la pantalla
+        y elegí el botón <strong>ORGÁNICO</strong> o
+        <strong>INORGÁNICO</strong>, según corresponda.
+    </p>
+    
+    <p>
+        ¡Prestá atención! Si tu respuesta es correcta,
+        ganás puntos. Además, cada residuo contiene información
+        que te explica por qué es importante reciclarlo
+        y cómo ayuda a cuidar nuestro planeta.
+    </p>
+    
+    <p>
+        ¡Aprendé, divertite y convertite en un héroe
+        del reciclaje!
+    </p>
+    
     </div>
-
-<button id="btnJugar">
-COMENZAR
-</button>
-
-</div>
+    
+    <button id="btnJugar">
+        COMENZAR
+    </button>
+    
+    </div>
+    
 
 
 <div id="juego" style="display:none;">
-<header>
 
-<img src="assets/logo.png-removebg-preview.png" class="logoMini">
+    <header>
+        <img src="assets/logo.png-removebg-preview.png" class="logoMini">
 
-<div class="score">
+        <div class="score">
+            ⭐ <span id="puntaje">0</span>
+        </div>
+    </header>
 
-⭐ <span id="puntaje">0</span>
+    <div class="nivel">
+        Nivel
+        <span id="nivel">1</span>
+    </div>
 
-</div>
+    <div class="barra">
+        <div id="progreso"></div>
+    </div>
 
-</header>
+    <div class="tarjeta">
 
-<div class="nivel">
+        <div id="emoji"></div>
 
-Nivel
+        <h2 id="nombre">
+            Cáscara de banana
+        </h2>
 
-<span id="nivel">1</span>
+        <div id="informacion"></div>
 
-</div>
+        <div id="importancia"></div>
 
-<div class="barra">
+        <p>
+            ¿Qué tipo de residuo es?
+        </p>
 
-<div id="progreso"></div>
+    </div>
 
-</div>
+    <!-- BOTONES PARA CLASIFICAR -->
 
-<div class="tarjeta">
+    <div id="botones-clasificacion">
 
-<div id="emoji" draggable="true"></div>
-<h2 id="nombre">
+        <button
+            type="button"
+            class="btn-clasificar organico"
+            onclick="clasificar('organico')">
+             ORGÁNICO
+        </button>
 
-Cáscara de banana
+        <button
+            type="button"
+            class="btn-clasificar inorganico"
+            onclick="clasificar('inorganico')">
+             INORGÁNICO
+        </button>
 
-</h2>
+    </div>
 
-<div id="informacion"></div>
+    <div id="mensaje"></div>
 
-<div id="importancia"></div>
-
-<p>
-
-Arrastrá el residuo hacia el tacho correcto.
-
-</p>
-
-</div>
-<div class="tachos">
-
-<div class="tacho organico"
-ondragover="permitir(event)"
-ondrop="soltar(event,'organico')">
-
-🌿
-
-<h3>ORGÁNICO</h3>
-
-</div>
-
-<div class="tacho inorganico"
-ondragover="permitir(event)"
-ondrop="soltar(event,'inorganico')">
-
-♻️
-
-<h3>INORGÁNICO</h3>
-
-</div>
-
-</div>
-
-<div id="mensaje"></div>
-
-</div>
 </div>
 
 <script src="residuos.js"></script>

@@ -7,7 +7,7 @@ font-family:Poppins,sans-serif;
 
 body{
 
-background:##CFD7CC;
+background:#e3ffd1;
 
 }
 
@@ -248,3 +248,34 @@ html, body{
   
 
 }
+
+#botones-clasificacion {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.btn-clasificar {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #2E8B57;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-clasificar:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.btn-clasificar:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
